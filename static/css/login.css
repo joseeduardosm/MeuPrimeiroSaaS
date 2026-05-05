@@ -1,0 +1,33 @@
+/* Centralização da tela */
+.login-wrapper {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card de login */
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Título */
+.login-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Botão */
+.login-button {
+    width: 100%;
+}
+
+/* Fundo leve */
+body {
+    background-color: #f5f6fa;
+}

@@ -1,0 +1,19 @@
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Dashboard cards */
+.card {
+    border-radius: 10px;
+}
+
+/* Login */
+.login-container {
+    margin-top: 100px;
+}
+
+/* Botão logout */
+.btn-logout {
+    margin-left: 10px;
+}

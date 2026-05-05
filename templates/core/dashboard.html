@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+<h1>Dashboard</h1>
+
+<p>Bem-vindo ao sistema.</p>
+{% if user.is_authenticated and user.tipo != 'PACIENTE' %}
+    <ul>
+        <li>Total de pacientes: {{ total_pacientes }}</li>
+        <li>Total de prontuários: {{ total_prontuarios }}</li>
+    </ul>
+{% endif %}
+{% endblock %}
