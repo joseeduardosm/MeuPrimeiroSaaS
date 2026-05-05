@@ -120,20 +120,34 @@ Pontos futuros importantes:
 - substituir senha temporária previsível por senha aleatória;
 - melhorar regras LGPD, auditoria e prontuário.
 
-agendamento, prontuario, exames, procedimentos, tudo integrado com o fluxo de caixa
-prontuario compartilhado entre clinicas (mediante autorização do usuario)
+## Ideias De Produto Em Estudo
 
-Agendamento com fila de espera automatizada, se alguem cancelar a consulta, ele ja agenda o proximo
+Além do CRUD inicial, o projeto considera uma visão mais ampla de plataforma:
 
-em planos mais caros, da pra pedir confirmação de agendamento, se nao confirmar, cancela e ja agenda o proximo (principalmente para clinicas particualres, isso vai chamar atencao)
+- integrar agendamentos, prontuários, exames, procedimentos e fluxo de caixa;
+- permitir fila de espera automática para ocupar horários liberados por cancelamento;
+- oferecer confirmação automática de agendamento em planos mais avançados;
+- cancelar horários não confirmados e chamar automaticamente o próximo paciente da fila;
+- permitir que o paciente agende em clínicas participantes da rede;
+- permitir compartilhamento de prontuário entre clínicas/especialistas somente com autorização do paciente;
+- estudar monetização adicional por consulta, exame ou procedimento processado pela plataforma;
+- contar especialistas ativos para aplicação dos limites de cada plano.
 
-o paciente tbm pode entrar para fazer agendamento em todas a rede de clincias "clientes" e quando agenda já pode optar por compartilahr o prontuario com aquela clinica/especialista
+## Notas Sobre Multi-Tenancy
 
-alem da mensalidade, to estudando a possiblidade de cada consulta/exame/procedimento tambem integrar uma comissão pra mim
+Multi-tenancy significa que cada clínica opera dentro do seu próprio ambiente lógico no sistema.
 
-aaaahhhh multi-tenancy
+Na prática, cada clínica deve ter dados isolados, como:
 
-significa que cada clinica tem seu "universo particular" dentro do sistema.
-Seus agendas, procedimentos, exames, blablabal
+- pacientes;
+- especialistas;
+- agendas;
+- procedimentos;
+- exames;
+- prontuários;
+- financeiro;
+- permissões de usuários.
 
-Contagem de especialistas no plano sao especialistas ativos
+O objetivo é que uma clínica nunca acesse dados de outra, exceto em fluxos explicitamente autorizados, como compartilhamento de prontuário pelo próprio paciente.
+
+Mesmo quando o paciente revogar o acesso ao prontuário compartilhado, o médico ou clínica não deve perder os registros produzidos durante o atendimento. Esse ponto precisa ser tratado com cuidado para equilibrar LGPD, responsabilidade médica e rastreabilidade clínica.
