@@ -35,6 +35,8 @@ Todas as mudanças relevantes deste projeto de estudo serão registradas aqui.
 - Criado `pacientes/forms.py` com `PacienteForm` como início da migração para Django Forms.
 - Criado `proximos-passos.md` para organizar a trilha de aprendizado.
 - Criado `README.md` com visão do projeto, stack e setup local.
+- Adicionado botão "Ver planos" na tela de login.
+- Adicionado modal Bootstrap com descrição e valores dos planos Free, Solo, Clínica, Pro e Enterprise.
 
 ### Alterado
 
@@ -45,6 +47,7 @@ Todas as mudanças relevantes deste projeto de estudo serão registradas aqui.
   - `Usuario.is_active = False`.
 - A listagem de pacientes passou a permitir alternar entre apenas ativos e ativos/inativos.
 - O formulário de pacientes passou a exibir checkbox de status no modo edição.
+- `README.md` passou a exibir um consolidado de progresso da trilha de pacientes com percentuais estimados.
 
 ### Corrigido
 

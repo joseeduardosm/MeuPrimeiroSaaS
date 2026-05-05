@@ -27,6 +27,56 @@
     width: 100%;
 }
 
+.modal-subtitle {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.plan-card {
+    height: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #ffffff;
+}
+
+.plan-card h6 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.plan-featured {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 1px rgba(13, 110, 253, 0.15);
+}
+
+.plan-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.plan-price span {
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.plan-card ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.plan-card li {
+    margin-bottom: 6px;
+}
+
+.enterprise-box {
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    padding: 12px 14px;
+}
+
 /* Fundo leve */
 body {
     background-color: #f5f6fa;

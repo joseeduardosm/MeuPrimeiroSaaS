@@ -119,3 +119,21 @@ Pontos futuros importantes:
 - implementar isolamento por tenant;
 - substituir senha temporária previsível por senha aleatória;
 - melhorar regras LGPD, auditoria e prontuário.
+
+agendamento, prontuario, exames, procedimentos, tudo integrado com o fluxo de caixa
+prontuario compartilhado entre clinicas (mediante autorização do usuario)
+
+Agendamento com fila de espera automatizada, se alguem cancelar a consulta, ele ja agenda o proximo
+
+em planos mais caros, da pra pedir confirmação de agendamento, se nao confirmar, cancela e ja agenda o proximo (principalmente para clinicas particualres, isso vai chamar atencao)
+
+o paciente tbm pode entrar para fazer agendamento em todas a rede de clincias "clientes" e quando agenda já pode optar por compartilahr o prontuario com aquela clinica/especialista
+
+alem da mensalidade, to estudando a possiblidade de cada consulta/exame/procedimento tambem integrar uma comissão pra mim
+
+aaaahhhh multi-tenancy
+
+significa que cada clinica tem seu "universo particular" dentro do sistema.
+Seus agendas, procedimentos, exames, blablabal
+
+Contagem de especialistas no plano sao especialistas ativos

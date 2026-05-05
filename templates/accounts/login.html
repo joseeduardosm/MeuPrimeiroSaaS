@@ -36,6 +36,15 @@
             <button class="btn btn-primary login-button">Entrar</button>
         </form>
 
+        <button
+            type="button"
+            class="btn btn-outline-secondary login-button mt-2"
+            data-bs-toggle="modal"
+            data-bs-target="#planosModal"
+        >
+            Ver planos
+        </button>
+
         {% if form.errors %}
             <div class="alert alert-danger mt-3">
                 Usuário ou senha inválidos
@@ -44,6 +53,95 @@
 
     </div>
 </div>
+
+<div class="modal fade" id="planosModal" tabindex="-1" aria-labelledby="planosModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h5 class="modal-title" id="planosModalLabel">Planos Bom Atendimento</h5>
+                    <p class="modal-subtitle mb-0">Escolha conforme o tamanho da operação da clínica.</p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row g-3">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="plan-card">
+                            <h6>Free</h6>
+                            <p class="plan-price">R$ 0<span>/mês</span></p>
+                            <ul>
+                                <li>1 especialista</li>
+                                <li>Até 50 pacientes</li>
+                                <li>Até 50 agendamentos/mês</li>
+                                <li>Cadastro básico de pacientes</li>
+                                <li>Agenda simples</li>
+                                <li>Sem notificações automáticas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3">
+                        <div class="plan-card plan-featured">
+                            <h6>Solo</h6>
+                            <p class="plan-price">R$ 79<span>/mês</span></p>
+                            <ul>
+                                <li>1 especialista</li>
+                                <li>Pacientes ilimitados</li>
+                                <li>Até 300 agendamentos/mês</li>
+                                <li>Prontuário básico</li>
+                                <li>Controle financeiro simples</li>
+                                <li>Suporte por e-mail</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3">
+                        <div class="plan-card">
+                            <h6>Clínica</h6>
+                            <p class="plan-price">R$ 197<span>/mês</span></p>
+                            <ul>
+                                <li>Até 3 especialistas</li>
+                                <li>Pacientes ilimitados</li>
+                                <li>Até 1.500 agendamentos/mês</li>
+                                <li>Recepção e gestão de equipe</li>
+                                <li>Relatórios operacionais</li>
+                                <li>Notificações por e-mail</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3">
+                        <div class="plan-card">
+                            <h6>Pro</h6>
+                            <p class="plan-price">R$ 397<span>/mês</span></p>
+                            <ul>
+                                <li>Até 10 especialistas</li>
+                                <li>Pacientes ilimitados</li>
+                                <li>Agendamentos com uso justo</li>
+                                <li>Financeiro avançado</li>
+                                <li>Auditoria e logs sensíveis</li>
+                                <li>Prioridade no suporte</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="enterprise-box mt-3">
+                    <strong>Enterprise:</strong>
+                    multiunidade, integrações, limites personalizados, WhatsApp/SMS, implantação assistida e suporte dedicado sob consulta.
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendi</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
